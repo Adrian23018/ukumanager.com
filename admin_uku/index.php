@@ -1,8 +1,11 @@
 <?php
+echo "entro";
 require 'includes/autoloader.php';
+echo "entro 2";
 if (!$_SESSION[_sessionIdioma]) {
 	$_SESSION[_sessionIdioma] = 1;
 }
+
 
 //Titulo y logos
 /*$sql = sprintf("SELECT * FROM a_tbl_pagina WHERE pag_id=1");

@@ -3,7 +3,8 @@
 /****************  MAGIC QUOTES ******************/
 /*****************************************************************/
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = ""){
-	$theValue = (!get_magic_quotes_gpc()) ? addslashes($theValue) : $theValue;
+	//$theValue = (!get_magic_quotes_gpc()) ? addslashes($theValue) : $theValue;
+	$theValue = (!false) ? addslashes($theValue) : $theValue;
 	switch ($theType) {
 
 		case "text":

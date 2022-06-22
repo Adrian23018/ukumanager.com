@@ -1,5 +1,5 @@
 <?php
-
+echo "1"."</br>";
 function ukuEditTarjetaDefault( $card ){
 	$sqlDefault = sprintf(" UPDATE tbl_stripe_cards SET sca_default=1 WHERE sca_card=%s ",
 		GetSQLValueString($card, "text")
@@ -9,6 +9,7 @@ function ukuEditTarjetaDefault( $card ){
 		return true;
 
 	return false;
+	
 }
 
 function ukuDeleteTarjeta( $id ){
@@ -20,6 +21,7 @@ function ukuDeleteTarjeta( $id ){
 		return true;
 
 	return false;
+	echo "3"."</br>";
 }
 
 // Obtener Tarjetas Usuario
@@ -38,6 +40,7 @@ function ukuGetTarjetasId( $id ){
 	}
 
 	return $cards;
+	echo "4"."</br>";
 
 }
 
