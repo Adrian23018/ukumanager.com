@@ -1,11 +1,14 @@
 <?php
 	// Headers App
 	require("../_functions/headers_options.php");
-
+	
 	require("../../admin_uku/includes/autoloader.php");
+	echo "connecion exitosa";
 	$pathFile = '../../imagenes-contenidos/';
 	date_default_timezone_set('America/Bogota');
 	$conexion = $_conection->connect();
+
+	
 
 	$_POST = json_decode(file_get_contents('php://input'), true);
 	$fechaSimulacion =  simuladorTiempo($fechaActual, $fechaReferencia);
