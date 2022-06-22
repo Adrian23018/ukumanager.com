@@ -1,7 +1,7 @@
 <?php
 	// Headers App
 	require("../_functions/headers_options.php");
-
+ echo "entro";
 	require("../../admin_uku/includes/autoloader.php");
 	$pathFile = '../../imagenes-contenidos/';
 	date_default_timezone_set('America/Bogota');
